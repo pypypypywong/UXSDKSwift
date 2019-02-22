@@ -13,9 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    var productCommunicationManager = ProductCommunicationManager()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Stop the screen saver coming on and thereby losing the MPC connection
+        application.isIdleTimerDisabled = true
+        
+        self.productCommunicationManager.registerWithSDK()
         return true
     }
 

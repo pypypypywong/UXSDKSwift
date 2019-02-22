@@ -12,9 +12,12 @@
 		52D5FD6F221F63C1007F477D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D5FD6D221F63C1007F477D /* Main.storyboard */; };
 		52D5FD71221F63C3007F477D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52D5FD70221F63C3007F477D /* Assets.xcassets */; };
 		52D5FD74221F63C3007F477D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52D5FD72221F63C3007F477D /* LaunchScreen.storyboard */; };
+		52D5FD7C221F65A5007F477D /* ProductCommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5FD7B221F65A5007F477D /* ProductCommunicationManager.swift */; };
+		F4E14EAF30603451FA039223 /* Pods_UXSDKSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 563BFFAB1C216BE301A61E0B /* Pods_UXSDKSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A8698E42927D30DD37EC80D /* Pods-UXSDKSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UXSDKSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UXSDKSwift/Pods-UXSDKSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		52D5FD66221F63C1007F477D /* UXSDKSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UXSDKSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52D5FD69221F63C1007F477D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52D5FD6B221F63C1007F477D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		52D5FD70221F63C3007F477D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52D5FD73221F63C3007F477D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52D5FD75221F63C3007F477D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52D5FD7B221F65A5007F477D /* ProductCommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCommunicationManager.swift; sourceTree = "<group>"; };
+		563BFFAB1C216BE301A61E0B /* Pods_UXSDKSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UXSDKSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C16C7547186C6A48B228F85 /* Pods-UXSDKSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UXSDKSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-UXSDKSwift/Pods-UXSDKSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E14EAF30603451FA039223 /* Pods_UXSDKSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				52D5FD68221F63C1007F477D /* UXSDKSwift */,
 				52D5FD67221F63C1007F477D /* Products */,
+				C3DE2DE6DBC267203A5243EA /* Pods */,
+				C4A94402EA86C2861A539D17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,30 @@
 			children = (
 				52D5FD69221F63C1007F477D /* AppDelegate.swift */,
 				52D5FD6B221F63C1007F477D /* ViewController.swift */,
-				52D5FD6D221F63C1007F477D /* Main.storyboard */,
+				52D5FD7B221F65A5007F477D /* ProductCommunicationManager.swift */,
 				52D5FD70221F63C3007F477D /* Assets.xcassets */,
-				52D5FD72221F63C3007F477D /* LaunchScreen.storyboard */,
 				52D5FD75221F63C3007F477D /* Info.plist */,
+				52D5FD6D221F63C1007F477D /* Main.storyboard */,
+				52D5FD72221F63C3007F477D /* LaunchScreen.storyboard */,
 			);
 			path = UXSDKSwift;
+			sourceTree = "<group>";
+		};
+		C3DE2DE6DBC267203A5243EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A8698E42927D30DD37EC80D /* Pods-UXSDKSwift.debug.xcconfig */,
+				6C16C7547186C6A48B228F85 /* Pods-UXSDKSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4A94402EA86C2861A539D17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				563BFFAB1C216BE301A61E0B /* Pods_UXSDKSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52D5FD78221F63C3007F477D /* Build configuration list for PBXNativeTarget "UXSDKSwift" */;
 			buildPhases = (
+				4B63D056F3B81922335677BE /* [CP] Check Pods Manifest.lock */,
 				52D5FD62221F63C1007F477D /* Sources */,
 				52D5FD63221F63C1007F477D /* Frameworks */,
 				52D5FD64221F63C1007F477D /* Resources */,
+				444CDAE3987B594D38CD3B3D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +159,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		444CDAE3987B594D38CD3B3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UXSDKSwift/Pods-UXSDKSwift-frameworks.sh",
+				"${PODS_ROOT}/DJI-SDK-iOS/iOS_Mobile_SDK/DJISDK.framework",
+				"${PODS_ROOT}/DJI-UXSDK-iOS/iOS_UXSDK/DJIUXSDK.framework",
+				"${PODS_ROOT}/DJIWidget/FFmpeg/FFmpeg.framework",
+				"${BUILT_PRODUCTS_DIR}/DJIWidget/DJIWidget.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJISDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJIUXSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFmpeg.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DJIWidget.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UXSDKSwift/Pods-UXSDKSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B63D056F3B81922335677BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UXSDKSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		52D5FD62221F63C1007F477D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D5FD7C221F65A5007F477D /* ProductCommunicationManager.swift in Sources */,
 				52D5FD6C221F63C1007F477D /* ViewController.swift in Sources */,
 				52D5FD6A221F63C1007F477D /* AppDelegate.swift in Sources */,
 			);
@@ -280,11 +355,14 @@
 		};
 		52D5FD79221F63C3007F477D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A8698E42927D30DD37EC80D /* Pods-UXSDKSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y779G8W83Y;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = UXSDKSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +376,14 @@
 		};
 		52D5FD7A221F63C3007F477D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C16C7547186C6A48B228F85 /* Pods-UXSDKSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y779G8W83Y;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = UXSDKSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
